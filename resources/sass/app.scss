@@ -1,6 +1,12 @@
 // Custom variables
 @import 'variable';
 
+// Map override
+@import 'map';
+
+// Custom fonts
+@import "fonts/fonts.scss";
+
 @import 'bootstrap/bootstrap';
 @import 'reboot';
 @import 'components';
