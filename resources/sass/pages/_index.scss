@@ -1,3 +1,66 @@
+.worldwide-payments {
+  padding: 100px 0;
+  background-color: $gray;
+
+  p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .currency--list {
+    display: grid;
+    gap: 20px;
+
+    &-item {
+      background-color: $white;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+
+      .country {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .flag {
+        width: 64px;
+        height: 64px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+
+      .currency {
+        font-size: 2.4rem;
+        font-weight: 500;
+
+        &-alias {
+          font-size: 1.6rem;
+          color: #5F6368;
+          text-transform: uppercase;
+        }
+      }
+
+      .amount {
+        text-align: right;
+
+        .large {
+          font-size: 2.4rem;
+          font-weight: 500;
+        }
+
+        .small {
+          font-size: 1.6rem;
+          color: #5F6368;
+        }
+      }
+    }
+  }
+}
+
 .payments {
   padding-top: 100px;
 }
@@ -323,6 +386,12 @@
 
 // < 1200px
 @include media-breakpoint-down(xl) {
+  .worldwide-payments {
+    .currency--list {
+      margin-top: 50px;
+    }
+  }
+
   .payment-methods {
     &--col {
       &-img {
@@ -409,6 +478,13 @@
 
 // < 768px
 @include media-breakpoint-down(md) {
+  .worldwide-payments .currency--list-item {    
+    .currency,
+    .amount .large {
+      font-size: 1.8rem;
+    }
+  }
+
   .payment-methods {
     padding: 60px 0;
 
@@ -438,13 +514,15 @@
   }
 
   .digital-solution,
-  .transaction-overview {
+  .transaction-overview,
+  .worldwide-payments {
     padding: 60px 0;    
   }
 
   .digital-solution,
   .transaction-overview,
-  .fingerpay-solution {
+  .fingerpay-solution,
+  .worldwide-payments {
     p {
       font-size: 1.6rem;
       margin-bottom: 20px;
@@ -478,6 +556,15 @@
 
 // < 576px
 @include media-breakpoint-down(sm) {
+  .worldwide-payments .currency--list-item {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .amount {
+      text-align: left;
+    }
+  }
+
   .digital-solution {
     &--grid {
       grid-template-columns: auto;

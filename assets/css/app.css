@@ -12261,6 +12261,59 @@ main {
     width: 100%;
   }
 }
+.worldwide-payments {
+  padding: 100px 0;
+  background-color: #EDEFEC;
+}
+.worldwide-payments p {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.worldwide-payments .currency--list {
+  display: grid;
+  gap: 20px;
+}
+.worldwide-payments .currency--list-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.worldwide-payments .currency--list-item .country {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.worldwide-payments .currency--list-item .flag {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.worldwide-payments .currency--list-item .currency {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.worldwide-payments .currency--list-item .currency-alias {
+  font-size: 1.6rem;
+  color: #5F6368;
+  text-transform: uppercase;
+}
+.worldwide-payments .currency--list-item .amount {
+  text-align: right;
+}
+.worldwide-payments .currency--list-item .amount .large {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.worldwide-payments .currency--list-item .amount .small {
+  font-size: 1.6rem;
+  color: #5F6368;
+}
+
 .payments {
   padding-top: 100px;
 }
@@ -12505,6 +12558,9 @@ main {
   }
 }
 @media (max-width: 1199.98px) {
+  .worldwide-payments .currency--list {
+    margin-top: 50px;
+  }
   .payment-methods--col-img .image {
     height: 460px;
     width: 400px;
@@ -12552,6 +12608,10 @@ main {
   }
 }
 @media (max-width: 767.98px) {
+  .worldwide-payments .currency--list-item .currency,
+  .worldwide-payments .currency--list-item .amount .large {
+    font-size: 1.8rem;
+  }
   .payment-methods {
     padding: 60px 0;
   }
@@ -12572,12 +12632,14 @@ main {
     gap: 30px;
   }
   .digital-solution,
-  .transaction-overview {
+  .transaction-overview,
+  .worldwide-payments {
     padding: 60px 0;
   }
   .digital-solution p,
   .transaction-overview p,
-  .fingerpay-solution p {
+  .fingerpay-solution p,
+  .worldwide-payments p {
     font-size: 1.6rem;
     margin-bottom: 20px;
   }
@@ -12595,6 +12657,13 @@ main {
   }
 }
 @media (max-width: 575.98px) {
+  .worldwide-payments .currency--list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .worldwide-payments .currency--list-item .amount {
+    text-align: left;
+  }
   .digital-solution--grid {
     grid-template-columns: auto;
   }
