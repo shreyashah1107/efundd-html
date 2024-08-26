@@ -396,7 +396,108 @@
 }
 
 .account-management {
-  padding: 150px 0 100px;
+  padding: 150px 0 0;
+  overflow: hidden;  
+
+  &--swiper {
+    padding-bottom: 100px;
+    overflow: visible;
+
+    .swiper-slide {
+      height: initial;
+    }
+
+    .swiper-nav {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .swiper-button-next, 
+      .swiper-button-prev {
+        position: static;
+        width: 40px;
+        height: 40px;
+        background-color: $primary;
+        border-radius: 50%;
+
+        &::after {
+          color: $white;
+          font-size: 1.4rem;
+        }
+
+        &:hover:not(.swiper-button-disabled) {
+          background-color: $body-color;
+        }
+      }
+    }
+  }
+
+  .card-account-management {
+    height: 100%;
+    background-color: #AFF8C8;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+    border-radius: 10px;
+
+    &--title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    &--text {
+      line-height: 1.3;
+    }
+
+    &--footer {
+      padding: 0 30px;
+    }
+  }
+
+  .analysis-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: $white;
+    padding: 15px;
+    gap: 15px;
+    border-radius: 6px;
+
+    h5 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #73808C;
+    }
+
+    &--left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .image {
+        flex-shrink: 0;
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
 }
 
 .digital-solution {
@@ -770,7 +871,21 @@
   }
 
   .account-management {
-    padding: 60px 0;
+    padding: 60px 0 0;
+
+    br {
+      display: none;
+    }
+
+    .card-account-management {
+      gap: 30px;
+    }
+
+    &--swiper .swiper-nav {
+      left: 50%;
+      transform: translateX(-50%);
+      right: auto;
+    }
   }
 
   .transaction-overview {
@@ -845,6 +960,44 @@
             max-width: 100px;
           }
         }
+      }
+    }
+  }
+
+  .account-management {
+    .card-account-management {
+      &--title {
+        font-size: 1.8rem;
+      }
+      &--footer {
+        padding: 0;
+      }
+    }
+    .analysis-card {
+      flex-direction: column;
+      align-items: flex-start;
+
+      h5 {
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+      }
+
+      &--left {
+        align-items: flex-start;
+
+        .image {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      &--right {
+        text-align: left;
       }
     }
   }
