@@ -21,13 +21,97 @@
     <link rel="stylesheet" href="./assets/css/app.css" />
   </head>
   <body>
-    <main>
-      <!-- Start: Header -->
-      <!-- End: Header -->
+    <!-- Start: Header -->
+    <header class="header bg-primary">
+      <nav class="navbar fixed-top navbar-expand-xl bg-primary" data-bs-theme="dark">
+        <div class="container-xxl">
+          <div class="d-flex align-items-center">
+            <a href="#" class="navbar-brand">
+              <img src="./assets/img/logo/logo-white.svg" alt="Logo">
+            </a>
 
+            <div class="sliding-tabs">
+              <div class="tabs">
+                <input type="radio" id="corporate-tab" name="tabs"  />
+                <label class="tab" for="corporate-tab">Corporate</label>
+
+                <input type="radio" id="business-tab" name="tabs" checked />
+                <label class="tab" for="business-tab">Business</label>
+
+                <input type="radio" id="personal-tab" name="tabs" />
+                <label class="tab" for="personal-tab">Personal</label>
+                <span class="glider"></span>
+              </div>
+            </div>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="headerNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" title="Products Child" class="dropdown-item">Products Child</a></li>
+                  <li><a href="#" title="Products Child" class="dropdown-item">Products Child</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Solutions
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" title="Solutions Child" class="dropdown-item">Solutions Child</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Partners
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" title="Partners Child" class="dropdown-item">Partners Child</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" title="Pricing" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" title="Help" class="nav-link">Help</a>
+              </li>
+              <li class="nav-item lang-selector--wrapper">
+                <div class="flag-img">
+                  <img src="./assets/img/flag/uk.svg" alt="Flag">
+                </div>
+                <div>
+                  <select id="langSelector" class="lang-selector">
+                    <option selected="selected" value="#">EN</option>
+                    <option value="#/fr/">FR</option>
+                  </select>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" title="Log In" class="btn btn-light-green">Log In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End: Header -->
+
+    <main>
       <!-- Start: Hero -->
       <section class="hero">
         <div class="container">
+          <!-- Active Page Text: Show < 576px -->
+          <div class="d-sm-none text-center">
+            <div class="subtitle">Business</div>
+          </div>
+          <!-- Active Page Text -->
+
           <div class="hero--content">
             <div class="row justify-content-center">
               <div class="col-xl-9 col-xxl-8">
@@ -909,7 +993,7 @@
     </main>
 
     <!-- Bootstrap 5.3 Js (Included Popper) -->
-    <!-- <script src="./assets/js/bootstrap.bundle.min.js"></script> -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- Swiper JS -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
