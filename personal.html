@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>EFundd - Personal</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!-- Custom CSS + Bootstrap 5.3 SCSS Included -->
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <!-- Start: Header -->
+    <header class="header bg-primary">
+      <nav class="navbar fixed-top navbar-expand-xl bg-primary" data-bs-theme="dark">
+        <div class="container-xxl">
+          <div class="d-flex align-items-center">
+            <a href="#" class="navbar-brand">
+              <img src="./assets/img/logo/logo-white.svg" alt="Logo">
+            </a>
+
+            <div class="sliding-tabs">
+              <div class="tabs">
+                <input type="radio" id="corporate-tab" name="tabs" />
+                <label class="tab" for="corporate-tab">Corporate</label>
+
+                <input type="radio" id="business-tab" name="tabs" />
+                <label class="tab" for="business-tab">Business</label>
+
+                <input type="radio" id="personal-tab" name="tabs" checked />
+                <label class="tab" for="personal-tab">Personal</label>
+                <span class="glider"></span>
+              </div>
+            </div>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="headerNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" title="Products Child" class="dropdown-item">Products Child</a></li>
+                  <li><a href="#" title="Products Child" class="dropdown-item">Products Child</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Solutions
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" title="Solutions Child" class="dropdown-item">Solutions Child</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Partners
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" title="Partners Child" class="dropdown-item">Partners Child</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" title="Pricing" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" title="Help" class="nav-link">Help</a>
+              </li>
+              <li class="nav-item lang-selector--wrapper">
+                <div class="flag-img">
+                  <img src="./assets/img/flag/uk.svg" alt="Flag">
+                </div>
+                <div>
+                  <select id="langSelector" class="lang-selector">
+                    <option selected="selected" value="#">EN</option>
+                    <option value="#/fr/">FR</option>
+                  </select>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" title="Log In" class="btn btn-light-green">Log In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End: Header -->
+
+    <main>
+      <!-- Start: Hero -->
+      <section class="hero hero--personal">
+        <div class="container">
+          <!-- Active Page Text: Show < 576px -->
+          <div class="d-sm-none text-center">
+            <div class="subtitle">Personal</div>
+          </div>
+          <!-- Active Page Text -->
+
+          <div class="hero--content">
+            <div class="row align-items-center justify-content-center justify-content-xl-between">
+              <div class="col-xl-6 col-xxl-5 text-center text-xl-start">
+                <h1>FAST, GLOBAL PAYMENT ACCOUNTS</h1>
+                <p>Personal account management in a single platform</p>
+
+                <div class="btn-grp justify-content-center justify-content-xl-start">
+                  <a href="#" title="Open an account" class="btn btn-light-green">Open an account</a>
+                  <a href="#" title="Get paid" class="btn btn-light-green">Get paid</a>
+                </div>
+              </div>
+
+              <div class="col-md-8 col-lg-8 col-xl-6 col-xxl-6 order-first order-xl-last">
+                <div class="hero--img text-center mt-5 mt-sm-0 mb-5 mb-xl-0">
+                  <img src="./assets/img/other/hero--personal.png" alt="Banner">
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </section>
+      <!-- End: Hero -->
+
+      <!-- Start: Payments -->
+      <section class="payments payments--slider">
+        <div class="container">
+          <div class="title-row text-center">
+            <h3 class="section-title has-bg-gradient">Banking in black and white</h3>
+          </div>
+
+          <div class="payments--swiper swiper pb-0">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="payments--col">
+                  <div class="payments--col-header">
+                    <h4>Instant Sort Code and Account Number</h4>
+                  </div>
+                  <div class="payments--col-footer">
+                    <div class="image">
+                      <img src="./assets/img/other/banking-1.png" alt="Instant Sort Code and Account Number">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="payments--col">
+                  <div class="payments--col-header">
+                    <h4>No monthly fees on the free plan</h4>
+                  </div>
+                  <div class="payments--col-footer">
+                    <div class="image">
+                      <img src="./assets/img/other/banking-2.png" alt="No monthly fees on the free plan">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="payments--col">
+                  <div class="payments--col-header">
+                    <h4>A virtual card to use straight away</h4>
+                  </div>
+                  <div class="payments--col-footer">
+                    <div class="image">
+                      <img src="./assets/img/other/card-issuing.png" alt="A virtual card to use straight away">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="payments--col">
+                  <div class="payments--col-header">
+                    <h4>IBAN for Multi Currency Transactions</h4>
+                  </div>
+                  <div class="payments--col-footer">
+                    <div class="image">
+                      <img src="./assets/img/other/iban.png" alt="IBAN for Multi Currency Transactions">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Payments -->
+
+      <!-- Start: Monitor Transactions -->
+      <section class="monitor-transactions">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-6 col-xxl-5">
+              <div class="monitor-transactions--img mb-5 mb-xl-0">
+                <img src="./assets/img/other/transactions.png" alt="Transactions">
+              </div>
+            </div>
+            <div class="col-xl-6 col-xxl-5 offset-xxl-1">
+              <div class="title-row mb-5">
+                <h3 class="section-title">Account management</h3>
+                <p>Get 100% real-time visibility & control to monitor transactions</p>
+              </div>
+              <div class="btn-grp">
+                <a href="#" title="Open an account" class="btn btn-light-green">Open an account</a>
+                <a href="#" title="Access account" class="btn btn-light-green">Access account</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Monitor Transactions -->
+
+      <!-- Start: Payment Methods -->
+      <section class="payment-methods pb-0">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xxl-10">
+              <div class="payment-methods--grid">
+                <div class="payment-methods--col">
+                  <div class="payment-methods--col-content">
+                    <div class="title-row">
+                      <div class="subtitle">Corporate Cards</div>
+                      <h3 class="section-title has-bg-gradient">Enjoy the benefits anywhere Mastercard is accepted</h3>
+                      <ul>
+                        <li>Safe online payments with 3D Secure.</li>
+                        <li>Physical & Virtual cards - For an even safer shopping experience.</li>
+                        <li>Your EFUNDD Business Card</li>
+                        <li>Google Pay - Pay with your mobile quickly, securely and easily.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="payment-methods--col-img">
+                    <div class="image">
+                      <img src="./assets/img/other/corporate-cards.png" alt="Corporate Cards">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Payment Methods -->
+
+      <!-- Start: Payments -->
+      <section class="payments payments--slider">
+        <div class="container">
+          <div class="title-row text-center">
+            <div class="subtitle">Payments</div>
+            <h3 class="section-title has-bg-gradient">Receive, Pay and Withdraw Funds Quickly</h3>
+            <p>Accept payments, send payouts, and automate your payment solution</p>
+          </div>
+
+          <div class="payments--swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="payments--col">
+                  <div class="payments--col-header">
+                    <h4>Flexible Card</h4>
+                    <p>Pay anywhere and in any currency with your debit card.</p>
+                  </div>
+                  <div class="payments--col-footer">
+                    <div class="image">
+                      <img src="./assets/img/other/card-issuing.png" alt="Flexible Card">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="payments--col">
+                  <div class="payments--col-header">
+                    <h4>Bill Splitting</h4>
+                    <p>Split bills with just a few taps</p>
+                  </div>
+                  <div class="payments--col-footer">
+                    <div class="image">
+                      <img src="./assets/img/other/bill-splitting.png" alt="Bill Splitting">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="payments--col">
+                  <div class="payments--col-header">
+                    <h4>Live Exchange Rates</h4>
+                    <p>See exchange rates in the app</p>
+                  </div>
+                  <div class="payments--col-footer">
+                    <div class="image">
+                      <img src="./assets/img/other/exchange-rate.png" alt="Live Exchange Rates">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="payments--col">
+                  <div class="payments--col-header">
+                    <h4>Multi Currency Account</h4>
+                    <p>Send and receive payments globally</p>
+                  </div>
+                  <div class="payments--col-footer">
+                    <div class="image">
+                      <img src="./assets/img/other/bill-splitting.png" alt="Multi Currency Account">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="swiper-nav">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Payments -->
+
+      <!-- Start: Money in Account -->
+      <section class="money-in-account">
+        <div class="container">
+          <div class="title-row text-center">
+            <h3 class="section-title text-white">Your money, in your account</h3>
+          </div>
+
+          <div class="account-management--swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-account-management">
+                  <div class="card-account-management--header">
+                    <div class="card-account-management--title">
+                      Dashboard
+                    </div>
+                    <div class="card-account-management--text">
+                      Our dashboard gives you quick and easy access to transaction history, statements, pay-out and more
+                    </div>
+                  </div>
+                  <div class="card-account-management--footer">
+                    <div class="card-account-management--img">
+                      <div class="crm-cta--list">
+                        <div class="crm-cta--list-item">
+                          <div class="payment-info">
+                            <div class="payment-info--title">
+                              <div class="flag">
+                                <img src="./assets/img/flag/uk.svg" alt="UK">
+                              </div>
+                              <div class="currency">GBP</div>
+                            </div>
+                            <div class="payment-info--account">
+                              <div class="amount">£528.30</div>
+                              <div class="account-number">
+                                <span class="icon">
+                                  <img src="./assets/img/other/account.svg" alt="Account">
+                                </span>
+                                <span>... 4940</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card-account-management">
+                  <div class="card-account-management--header">
+                    <div class="card-account-management--title">
+                      Fastpay
+                    </div>
+                    <div class="card-account-management--text">
+                      Our fastpay section allows you to process and receive payments in second
+                    </div>
+                  </div>
+                  <div class="card-account-management--footer">
+                    <div class="card-account-management--img">
+                      <div class="analysis-card">
+                        <div class="analysis-card--left">
+                          <div class="image">
+                            <img src="./assets/img/other/analysis-4.png" alt="Invoice 2085">
+                          </div>
+                          <div class="title">
+                            <h5>Invoice 2085</h5>
+                          </div>
+                        </div>
+                        <div class="analysis-card--right">
+                          <h5>£375.00 <span class="badge">Pay</span></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card-account-management">
+                  <div class="card-account-management--header">
+                    <div class="card-account-management--title">
+                      Fraud Detection
+                    </div>
+                    <div class="card-account-management--text">
+                      Using our AI tools, manage and protect fraudulent transactions automatically.
+                    </div>
+                  </div>
+                  <div class="card-account-management--footer">
+                    <div class="card-account-management--img">
+                      <div class="analysis-card">
+                        <div class="analysis-card--left">
+                          <div class="image">
+                            <img src="./assets/img/other/analysis-3.png" alt="Transaction blocked">
+                          </div>
+                          <div class="title">
+                            <h5>Transaction blocked</h5>
+                            <p>We blocked an unusual transaction</p>
+                          </div>
+                        </div>
+                        <div class="analysis-card--right">
+                          <h5>now</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card-account-management">
+                  <div class="card-account-management--header">
+                    <div class="card-account-management--title">
+                      Disputes
+                    </div>
+                    <div class="card-account-management--text">
+                      Manage transactions chargebacks
+                    </div>
+                  </div>
+                  <div class="card-account-management--footer">
+                    <div class="card-account-management--img">
+                      <img src="./assets/img/slider/" alt="Disputes">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-nav">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Money in Account -->
+
+      <!-- Start: Mobile App -->
+      <section class="mobile-app">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-xxl-5">
+              <h3 class="section-title has-bg-gradient">Our highly rated mobile app</h3>
+
+              <ul class="app-feature--list app-feature--list-icons">
+                <li>
+                  <div class="icon">
+                    <img src="./assets/img/other/globe.svg" alt="Icon Globe">
+                  </div>
+                  <div class="text">Check your balance and search transactions (including debit card transactions) in just a few taps</div>
+                </li>
+
+                <li>
+                  <div class="icon">
+                    <img src="./assets/img/other/currency.svg" alt="Icon Currency">
+                  </div>
+                  <div class="text">Transfer money and set up new payments, on the go</div>                  
+                </li>
+
+                <li>
+                  <div class="icon">
+                    <img src="./assets/img/other/grid.svg" alt="Icon Grid">
+                  </div>
+                  <div class="text">Get fraud alerts, for example if someone registers your account on a new device</div>                  
+                </li>
+
+                <li>
+                  <div class="icon">
+                    <img src="./assets/img/other/card.svg" alt="Icon Card">
+                  </div>
+                  <div class="text">Manage your personal details, such as your phone number and email address.</div>                  
+                </li>
+              </ul>
+            </div>
+            <div class="col-xxl-6 order-first order-xxl-last">
+              <div class="mobile-app--img">
+                <img src="./assets/img/other/mobile-app.png" alt="Mobile App">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Mobile App -->
+
+      <!-- Start: Pricing -->
+      <section class="pricing-plan">
+        <div class="container">
+          <div class="pricing-plan--grid">
+            <div class="card-pricing">
+              <div class="card-pricing--header">
+                <div class="saving"><span>Save an average of 5%</span></div>
+                <div class="card-pricing--img">
+                  <img src="./assets/img/other/card-issuing.png" alt="Business">
+                </div>
+                <div class="card-pricing--title">Business</div>
+                <div class="price">
+                  <span class="amount">£9.99</span>
+                  <span>+ VAT Monthly</span>
+                </div>
+                <div class="card-pricing--cta">
+                  <a href="#" title="Open an account" class="btn btn-black btn-block">Open an account</a>
+                </div>
+              </div>
+              <div class="card-pricing--body">
+                <h5>EFUNDD features</h5>
+                <ul>
+                  <li>Your EFUNDD Business Card</li>
+                  <li>Your EFUNDD Business Card</li>
+                  <li>Your EFUNDD Business Card</li>
+                  <li>Your EFUNDD Business Card</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card-pricing">
+              <div class="card-pricing--header">
+                <div class="saving"><span>Save an average of 5%</span></div>
+                <div class="card-pricing--img">
+                  <img src="./assets/img/other/card-issuing.png" alt="Business">
+                </div>
+                <div class="card-pricing--title">Business</div>
+                <div class="price">
+                  <span class="amount">£9.99</span>
+                  <span>+ VAT Monthly</span>
+                </div>
+                <div class="card-pricing--cta">
+                  <a href="#" title="Open an account" class="btn btn-black btn-block">Open an account</a>
+                </div>
+              </div>
+              <div class="card-pricing--body">
+                <h5>EFUNDD features</h5>
+                <ul>
+                  <li>Your EFUNDD Business Card</li>
+                  <li>Your EFUNDD Business Card</li>
+                  <li>Your EFUNDD Business Card</li>
+                  <li>Your EFUNDD Business Card</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card-pricing">
+              <div class="card-pricing--header">
+                <div class="saving"><span>Save an average of 5%</span></div>
+                <div class="card-pricing--img">
+                  <img src="./assets/img/other/card-issuing.png" alt="Business">
+                </div>
+                <div class="card-pricing--title">Business</div>
+                <div class="price">
+                  <span class="amount">£9.99</span>
+                  <span>+ VAT Monthly</span>
+                </div>
+                <div class="card-pricing--cta">
+                  <a href="#" title="Open an account" class="btn btn-black btn-block">Open an account</a>
+                </div>
+              </div>
+              <div class="card-pricing--body">
+                <h5>EFUNDD features</h5>
+                <ul>
+                  <li>Your EFUNDD Business Card</li>
+                  <li>Your EFUNDD Business Card</li>
+                  <li>Your EFUNDD Business Card</li>
+                  <li>Your EFUNDD Business Card</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Pricing -->
+
+      <!-- Start: Security -->
+      <section class="security security--alt">
+        <div class="container">
+          <div class="title-row text-center">
+            <div class="subtitle">Security</div>
+            <h3 class="section-title has-bg-gradient">How we help protect you</h3>
+            <p>You’ve worked hard for your money. Here’s how we work hard to help keep your account safe.</p>
+          </div>
+
+          <div class="security-text--grid">
+            <div class="security-text--col">
+              <div class="security-icon">
+                <img src="./assets/img/other/secure-technology.svg" alt="Secure Technology">
+              </div>
+              <div class="security-content">
+                <h4>Secure technology</h4>
+                <p>Skip the password, not the security. Use your phones biometric setting or your password manager. Our app supports Apple TouchID, FaceID or Androids fingerprint or facial recognition login for quick and secure account access and our efundd.com website is password manager enabled.</p>
+              </div>
+            </div>
+            <div class="security-text--col">
+              <div class="security-icon">
+                <img src="./assets/img/other/monitoring.svg" alt="24/7 account fraud monitoring">
+              </div>
+              <div class="security-content">
+                <h4>24/7 account fraud monitoring</h4>
+                <p>We help safeguard your account and debit card purchases using sophisticated fraud monitoring. We monitor for fraud 24/7 and can text, email or call you if there are unusual transactions on your account.</p>
+              </div>
+            </div>
+            <div class="security-text--col">
+              <div class="security-icon">
+                <img src="./assets/img/other/encryption.svg" alt="Data encryption">
+              </div>
+              <div class="security-content">
+                <h4>Data encryption</h4>
+                <p>When you sign in to efundd.com or the Efundd Mobile® app, we encrypt your data to help ensure your personal information stays confidential.</p>
+              </div>
+            </div>
+            <div class="security-text--col">
+              <div class="security-icon">
+                <img src="./assets/img/other/safeguards.svg" alt="Safeguards against suspicious activity">
+              </div>
+              <div class="security-content">
+                <h4>Safeguards against suspicious activity</h4>
+                <p>If we spot suspicious activity on your account, we may place a temporary hold on it. This is an extra security step to help ensure it's really you and not someone else using your account.</p>
+              </div>
+            </div>
+            <div class="security-text--col">
+              <div class="security-icon">
+                <img src="./assets/img/other/validation-check.svg" alt="Additional validation checks">
+              </div>
+              <div class="security-content">
+                <h4>Additional validation checks</h4>
+                <p>When you sign in for the first time or we see unusual login or account activity we’ll use additional validation checks like mobile app notifications or one time code to authenticate you. This helps us protect your accounts and lets us recognize your device the next time you sign in.</p>
+              </div>
+            </div>
+            <div class="security-text--col">
+              <div class="security-icon">
+                <img src="./assets/img/other/secure-connection.svg" alt="Secure connection to apps">
+              </div>
+              <div class="security-content">
+                <h4>Secure connection to apps</h4>
+                <p>When you decide to share your Chase account information with an app or company, we work to make it safe. We require them to connect directly with us so you don’t give them your Chase password.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Security -->
+
+      <!-- Start: CTA -->
+      <section class="cta cta--alt">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xxl-10">
+              <div class="cta--content-wrapper">
+                <div class="cta--content">
+                  <div class="row">
+                    <div class="col-lg-7 col-xl-6">
+                      <h3 class="section-title">Everything you need to Send and Receive Payments Globally.</h3>
+
+                      <div class="btn-grp">
+                        <a href="#" title="Open an account" class="btn btn-light-green">Open an account</a>
+                        <a href="#" title="Process payments" class="btn btn-light-green">Process payments</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cta--img">
+                  <img src="./assets/img/other/globe-cta.png" alt="CTA Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: CTA -->
+
+      <!-- Start: Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer--grid">
+            <!-- Company Info & Contact Details -->
+            <div class="footer--company">
+              <div class="footer--company-top">
+                <div class="logo">
+                  <img src="./assets//img/logo/logo-white.svg" alt="EFundd Logo">
+                </div>
+
+                <div class="contact-info">
+                  <div class="contact-info--col">
+                    <h5>Support</h5>
+                    <div><a href="mailto:support@funddpay.com" title="support@funddpay.com">support@funddpay.com</a></div>
+                    <div><a href="tel:+4402039761111" title="+44 0203.976.1111">+44 0203.976.1111</a></div>
+                  </div>
+
+                  <div class="contact-info--col">
+                    <h5>Developers</h5>
+                    <div><a href="mailto:integrations@funddpay.com" title="integrations@funddpay.com">integrations@funddpay.com</a></div>
+                  </div>
+
+                  <div class="contact-info--col">
+                    <h5>Sales</h5>
+                    <div><a href="mailto:sales@funddpay.com" title="sales@funddpay.com">sales@funddpay.com</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Hide < 1200px -->
+              <div class="footer--company-bottom">
+                <p>Copyright &copy; 2024 | All Rights Reserved </p>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer--nav">
+              <div class="footer--nav-grid">
+                <div class="footer--nav-col">
+                  <h4>Products</h4>
+                  <ul>
+                    <li><a href="#" title="Integrations">Integrations</a></li>
+                    <li><a href="#" title="In Person Payments">In Person Payments</a></li>
+                    <li><a href="#" title="CRM Platform">CRM Platform</a></li>
+                    <li><a href="#" title="Online Payments">Online Payments</a></li>
+                    <li><a href="#" title="Card Issuing">Card Issuing</a></li>
+                    <li><a href="#" title="Linked Accounts">Linked Accounts</a></li>
+                    <li><a href="#" title="Terminals">Terminals</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer--nav-col">
+                  <h4>Partners</h4>
+                  <ul>
+                    <li><a href="#" title="Developers">Developers</a></li>
+                    <li><a href="#" title="Sales Executives">Sales Executives</a></li>
+                    <li><a href="#" title="Help center">Help center</a></li>
+                    <li><a href="#" title="Agents Login">Agents Login</a></li>
+                    <li><a href="#" title="Solutions">Solutions</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer--nav-col">
+                  <h4>Resources</h4>
+                  <ul>
+                    <li><a href="#" title="Why Funddpay">Why Funddpay</a></li>
+                    <li><a href="#" title="Security">Security</a></li>
+                    <li><a href="#" title="System Status">System Status</a></li>
+                    <li><a href="#" title="Careers">Careers</a></li>
+                    <li><a href="#" title="Sales">Sales</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer--nav-col">
+                  <h4>Legal</h4>
+                  <ul>
+                    <li><a href="#" title="Our Terms & Condition">Our Terms & Condition</a></li>
+                    <li><a href="#" title="Privacy policy">Privacy policy</a></li>
+                    <li><a href="#" title="Cookie policy">Cookie policy</a></li>
+                    <li><a href="#" title="Mastercard">Mastercard</a></li>
+                    <li><a href="#" title="Applcable Fees">Applcable Fees</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Awards Information -->
+            <div class="footer--awards">
+              <h4>Awards & Certificates</h4>
+              <div class="achievements-wrapper">
+                <div class="achievements--list">
+                  <div class="image">
+                    <img src="https://placehold.co/120x120" alt="Certificate Image">
+                  </div>
+                  <div class="image">
+                    <img src="https://placehold.co/120x120" alt="Certificate Image">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hide > 1200px -->
+            <div class="footer--copyright">
+              <p>Copyright &copy; 2024 | All Rights Reserved </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End: Footer -->
+    </main>
+
+    <!-- Bootstrap 5.3 Js (Included Popper) -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
