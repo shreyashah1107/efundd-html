@@ -75,6 +75,43 @@
   }
 }
 
+.card-business-services {
+  background-color: $primary;
+  color: $white;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .icon {
+    img {
+      height: 24px;
+    }
+  }
+
+  .statistics {
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .text {
+    line-height: 1.4;
+  }
+}
+
+// < 1400px
+@include media-breakpoint-down(xxl) {
+  .card-business-services {
+    gap: 20px;
+
+    .statistics {
+      font-size: 4rem;
+    }
+  }
+}
+
 // < 768px
 @include media-breakpoint-down(md) {
   .card-account-management {
@@ -117,6 +154,11 @@
 
     &--right {
       text-align: left;
+    }
+  }
+  .card-business-services {
+    .statistics {
+      font-size: 2.2rem;
     }
   }
 }

@@ -52,13 +52,63 @@
     }
   }
 
-  &--personal {
+  &--personal,
+  &--corporate {
     padding-top: 50px;
-    
-    .hero {
-      &--content {
-        text-align: left;
+  }
+
+  &--corporate {
+    position: relative;
+    padding: 200px 0;
+
+    .hero--img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 50px;
+      width: 55%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-position: right;
       }
+    }
+
+    .text-certified {
+      display: inline-flex;
+      align-items: center;
+      text-align: left;
+      padding: 12px;
+      margin-top: 50px;
+      background-color: $secondary;
+      border-radius: 6px;
+      gap: 12px;
+
+      .icon {
+        display: flex;
+        flex-shrink: 0;
+        width: 20px;
+      }
+
+      .text {
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// < 1400px
+@include media-breakpoint-down(xxl) {
+  .hero--corporate {
+    padding: 50px 0 100px;
+
+    .hero--img {
+      width: 50%;
+      bottom: 0;
     }
   }
 }
@@ -72,6 +122,19 @@
       .card-hero {
         &--img {
           height: 150px;
+        }
+      }
+    }
+
+    &--corporate {
+      .hero--img {
+        position: static;
+        width: 100%;
+        padding: 0 $grid-gutter-width/2;
+        text-align: center;
+
+        img {
+          max-width: 66.66666667%;
         }
       }
     }
@@ -111,6 +174,14 @@
     &--swiper {
       margin-top: 50px;
     }
+
+    &--corporate {
+      .hero--img {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
   }
 }
 
@@ -120,6 +191,14 @@
     &--content {
       h1 {
         font-size: 3rem;
+      }
+    }
+
+    &--corporate {
+      .hero--img {
+        img {
+          max-width: 100%;
+        }
       }
     }
   }
