@@ -315,6 +315,9 @@
         p {
           line-height: 1.4;
         }
+        &--cta {
+          margin-top: 20px;
+        }
       }
     }
   }
@@ -763,6 +766,10 @@
       &--grid {
         grid-template-columns: auto;
         gap: 30px;
+      }
+
+      &--col .security-content--cta {
+        margin-top: 10px;
       }
     }
   }

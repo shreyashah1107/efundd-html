@@ -58,6 +58,14 @@
     &:hover {
       opacity: .7;
     }
+
+    &--green {
+      color: $secondary;
+
+      .icon {
+        background-image: url(../img/other/angle-right-green.svg);
+      }
+    }
   }
 
   &-grp {

@@ -58,6 +58,21 @@
       transition: 0.25s ease-out;
     }
   }
+
+  &.sliding-tabs--alt {
+    .tabs {
+      color: $body-color;
+      background-color: #AFF8C8;
+
+      input[type=radio]:checked + label {
+        color: $white;
+      }
+
+      .glider {
+        background-color: $secondary;
+      }
+    }
+  }
 }
 
 // < 1400px

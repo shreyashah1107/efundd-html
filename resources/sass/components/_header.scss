@@ -122,6 +122,23 @@
       box-shadow: none;
     }
   }
+
+  &--light {
+    // > 1200px
+    @include media-breakpoint-up(xl) {
+      color: $body-color;
+
+      .navbar-nav {
+        .nav-link {
+          color: $body-color;
+        }
+        .dropdown-toggle::after,
+        .lang-selector {
+          background-image: url(../img/other/menu-black.svg);
+        }
+      }
+    }
+  }
 }
 
 // < 1200px
@@ -186,15 +203,6 @@
         background: $primary;
         border-top: 1px solid rgba($white, .1);
       }
-    }
-  }
-}
-
-// < 992px
-@include media-breakpoint-down(lg) {
-  .header {
-    .navbar {
-      
     }
   }
 }
