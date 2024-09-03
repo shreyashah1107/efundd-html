@@ -1,0 +1,53 @@
+.navbar > * {
+    position: relative;
+}
+
+.mega-menu {
+    position: absolute;
+    left: $grid-gutter-width/2 !important;
+    right: $grid-gutter-width/2;
+    padding: 20px;
+    margin-top: $grid-gutter-width/2 !important;
+    display: none;
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .nav-item.dropdown {
+    position: static;
+
+    &:hover .mega-menu {
+        display: block;
+    }
+}
+  
+  .mega-menu-item {
+    text-align: left;
+    padding: 15px;
+    
+    h6 {
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+  
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+  
+        li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    }
+}
+  
+  .menu-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  

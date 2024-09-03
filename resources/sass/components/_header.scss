@@ -46,27 +46,27 @@
         background-size: 10px;
       }
 
-      .dropdown-menu {
-        right: 0;
-        left: auto;
-        padding: 0;
-        min-width: 200px;
-        background-color: $white;
-        overflow: hidden;
+      // .dropdown-menu {
+      //   right: 0;
+      //   left: auto;
+      //   padding: 0;
+      //   min-width: 200px;
+      //   background-color: $white;
+      //   overflow: hidden;
 
-        .dropdown-item {
-          color: $body-color;
-          font-size: 1.4rem;
-          padding: 10px 15px;
+      //   .dropdown-item {
+      //     color: $body-color;
+      //     font-size: 1.4rem;
+      //     padding: 10px 15px;
 
-          &:hover,
-          &.active {
-            color: $primary;
-            text-decoration: none;
-            background-color: $gray;
-          }
-        }
-      }
+      //     &:hover,
+      //     &.active {
+      //       color: $primary;
+      //       text-decoration: none;
+      //       background-color: $gray;
+      //     }
+      //   }
+      // }
 
       .lang-selector {
         appearance: none;
