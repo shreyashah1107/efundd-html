@@ -35,11 +35,11 @@
       }
     }
 
-    input[id=corporate-tab]:checked ~ .glider {
+    input[id=business-tab]:checked ~ .glider {
       transform: translateX(0);
     }
 
-    input[id=business-tab]:checked ~ .glider {
+    input[id=corporate-tab]:checked ~ .glider {
       transform: translateX(100%);
     }
 
