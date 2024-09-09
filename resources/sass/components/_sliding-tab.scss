@@ -36,11 +36,11 @@
     }
 
     input[id=business-tab]:checked ~ .glider {
-      transform: translateX(0);
+      transform: translateX(100%);
     }
 
     input[id=corporate-tab]:checked ~ .glider {
-      transform: translateX(100%);
+      transform: translateX(0);
     }
 
     input[id=personal-tab]:checked ~ .glider {

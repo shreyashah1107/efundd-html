@@ -1,0 +1,73 @@
+.payment-link {
+  padding: 100px 0;
+  background-color: #EDEFEC;
+}
+
+.checkout {
+  padding: 80px 0;
+
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+.components {
+  background-color: $primary;
+  padding: 100px 0;
+
+  p {
+    color: $white;
+    margin-bottom: 30px;
+  }
+
+  &--img {
+    margin-top: 50px;
+  }
+}
+
+.transaction-overview {
+  &.ebannc-api {
+    background-color: transparent;
+
+    .card-transaction-overview {
+      background-color: #EDEFEC;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+
+  ~.payment-processing {
+    border-top: 1px solid #EDEFEC;
+  }
+}
+
+// < 1200px
+@include media-breakpoint-down(xl) {
+  .transaction-overview {
+    &.ebannc-api {
+      .transaction-overview--grid {
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+// < 992px
+@include media-breakpoint-down(lg) {
+  .checkout {
+    &--img {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+  .checkout,
+  .components {
+    padding: 60px 0;
+  }
+}
