@@ -99,6 +99,14 @@
       }
     }
   }
+
+  &--online-payment {
+    .hero--content {
+      h1 {
+        text-transform: none;
+      }
+    }
+  }
 }
 
 // < 1400px
