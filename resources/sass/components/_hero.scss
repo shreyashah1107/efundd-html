@@ -101,9 +101,51 @@
   }
 
   &--online-payment {
+    padding: 30px 0 60px;
+
     .hero--content {
       h1 {
         text-transform: none;
+        font-size: 4.8rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+
+      .email-wrapper {
+        position: relative;
+        max-width: 70%;
+
+        .form-control {
+          background-color: transparent;
+          padding: 20px 150px 20px 20px;
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: $white;
+          border-radius: 8px;
+
+          &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: $white;
+          }
+          &::-moz-placeholder { /* Firefox 19+ */
+            color: $white;
+          }
+          &:-ms-input-placeholder { /* IE 10+ */
+            color: $white;
+          }
+          &:-moz-placeholder { /* Firefox 18- */
+            color: $white;
+          }
+        }
+
+        .btn {
+          position: absolute;
+          right: 8px;
+          top: 50%;
+          transform: translateY(-50%);
+          border-radius: 8px;
+        }
       }
     }
   }
@@ -144,6 +186,12 @@
         img {
           max-width: 66.66666667%;
         }
+      }
+    }
+
+    &--online-payment {
+      .hero--content .email-wrapper {
+        margin: 0 auto;
       }
     }
   }
@@ -190,6 +238,18 @@
         }
       }
     }
+
+     &--online-payment {
+      .hero--content .email-wrapper {
+        max-width: 100%;
+
+        .btn {
+          position: static;
+          transform: none;
+          margin-top: 20px;
+        }
+      }
+    }
   }
 }
 
@@ -206,6 +266,14 @@
       .hero--img {
         img {
           max-width: 100%;
+        }
+      }
+    }
+
+    &--online-payment {
+      .hero--content {
+        h1 {
+          font-size: 3rem;
         }
       }
     }
