@@ -1,6 +1,71 @@
 .header {
   color: $white;
 
+  &.header-payments {
+    background-color: #AFF8C8 !important;
+    
+    .navbar {
+      background-color: #AFF8C8 !important;
+
+      // > 1200px
+      @include media-breakpoint-up(xl) {
+        .navbar-nav {
+          .nav-item.dropdown:hover .nav-link {
+            background-color: #008664;
+            color: $white;
+          
+            &::after {
+              background-image: url(../img/other/menu-white.svg);
+            }
+          }
+
+          .nav-link {
+            &:hover,
+            &.active,
+            &.show {
+              background-color: #008664;
+              color: $white;
+
+              &::after {
+                background-image: url(../img/other/menu-white.svg);
+              }
+            }
+          }
+        }
+      }
+
+      .navbar-collapse {
+        background-color: #AFF8C8 !important;
+
+        .navbar-nav {
+          .nav-link {
+            color: $body-color;
+          }
+          .dropdown-toggle::after {
+            background-image: url(../img/other/menu-black.svg);
+          }
+        }
+
+        .lang-selector {
+          color: $body-color;
+          background-image: url(../img/other/menu-black.svg);
+        }
+      }
+    }
+
+    .sliding-tabs {
+      .tabs {
+        .tab {
+          color: $white;
+        }
+
+        input[type=radio]:checked + label {
+          color: $body-color;
+        }
+      }
+    }
+  }
+
   .navbar {
     padding: 40px 0;
 

@@ -149,6 +149,25 @@
       }
     }
   }
+
+  &--in-person-payment {
+    padding: 50px 0 100px;
+    background: linear-gradient(180deg, #AFF8C8 0%, #FFFFFF 100%);
+
+    .hero--content {
+      h1 {
+        color: $body-color;
+      }
+
+      .hero--img {
+        margin-top: 60px;
+
+        img {
+          max-height: 400px;
+        }
+      }
+    }
+  }
 }
 
 // < 1400px
@@ -275,6 +294,13 @@
         h1 {
           font-size: 3rem;
         }
+      }
+    }
+
+    &--in-person-payment {
+      .subtitle {
+        background-color: #008664;
+        color: $white;
       }
     }
   }

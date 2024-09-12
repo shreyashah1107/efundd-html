@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>EFundd - In Person Payments</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!-- Custom CSS + Bootstrap 5.3 SCSS Included -->
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <!-- Start: Header -->
+    <header class="header header--light header-payments">
+      <nav class="navbar fixed-top navbar-expand-xl">
+        <div class="container-xxl">
+          <div class="d-flex align-items-center">
+            <a href="#" class="navbar-brand">
+              <img src="./assets/img/logo/logo-dark.svg" alt="Logo">
+            </a>
+
+            <div class="sliding-tabs">
+              <div class="tabs">
+                <input type="radio" id="corporate-tab" name="tabs" />
+                <label class="tab" for="corporate-tab">Corporate</label>
+
+                <input type="radio" id="business-tab" name="tabs" checked />
+                <label class="tab" for="business-tab">Business</label>
+
+                <input type="radio" id="personal-tab" name="tabs" />
+                <label class="tab" for="personal-tab">Personal</label>
+                <span class="glider"></span>
+              </div>
+            </div>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="headerNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <div class="dropdown-menu mega-menu">
+                  <div class="mega-menu--container">
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/currency.svg" alt="Online Payments Icon">
+                        </div>
+                        <div class="text">Online Payments</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="Checkout">Checkout</a></li>
+                        <li><a href="#" title="Payment link">Payment link</a></li>
+                        <li><a href="#" title="Components">Components</a></li>
+                        <li><a href="#" title="Online payments">Online payments</a></li>
+                        <li><a href="#" title="Open banking">Open banking</a></li>
+                        <li><a href="#" title="Direct Debit">Direct Debit</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/currency.svg" alt="In Person Payments Icon">
+                        </div>
+                        <div class="text">In Person Payments</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="Card readers">Card readers</a></li>
+                        <li><a href="#" title="EFUNDD Pro">EFUNDD Pro</a></li>
+                        <li><a href="#" title="EFUNDD Max">EFUNDD Max</a></li>
+                        <li><a href="#" title="Self serve kiosks">Self serve kiosks</a></li>
+                        <li><a href="#" title="POS management">POS management</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/currency.svg" alt="CRM Icon">
+                        </div>
+                        <div class="text">CRM</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="Billing">Billing</a></li>
+                        <li><a href="#" title="Invoicing">Invoicing</a></li>
+                        <li><a href="#" title="Accounting">Accounting</a></li>
+                        <li><a href="#" title="Project management">Project management</a></li>
+                        <li><a href="#" title="Tasks monitoring">Tasks monitoring</a></li>
+                        <li><a href="#" title="Contracts">Contracts</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/card.svg" alt="Card Issuing Icon">
+                        </div>
+                        <div class="text">Card Issuing</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="Physical cards">Physical cards</a></li>
+                        <li><a href="#" title="Virtual cards">Virtual cards</a></li>
+                        <li><a href="#" title="Card management">Card management</a></li>
+                        <li><a href="#" title="Card controls">Card controls</a></li>
+                        <li><a href="#" title="Card production & fulfillment">Card production & fulfillment</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/card.svg" alt="Payment Services Icon">
+                        </div>
+                        <div class="text">Payment Services</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="International transfers & FX">International transfers & FX</a></li>
+                        <li><a href="#" title="Inter ledger transfers">Inter ledger transfers</a></li>
+                        <li><a href="#" title="Multi currency wallets">Multi currency wallets</a></li>
+                        <li><a href="#" title="Debit send">Debit send</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Solutions
+                </a>
+                <div class="dropdown-menu mega-menu">
+                  <div class="mega-menu--container">
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/currency.svg" alt="Online Payments Icon">
+                        </div>
+                        <div class="text">Online Payments</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="Checkout">Checkout</a></li>
+                        <li><a href="#" title="Payment link">Payment link</a></li>
+                        <li><a href="#" title="Components">Components</a></li>
+                        <li><a href="#" title="Online payments">Online payments</a></li>
+                        <li><a href="#" title="Open banking">Open banking</a></li>
+                        <li><a href="#" title="Direct Debit">Direct Debit</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/currency.svg" alt="In Person Payments Icon">
+                        </div>
+                        <div class="text">In Person Payments</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="Card readers">Card readers</a></li>
+                        <li><a href="#" title="EFUNDD Pro">EFUNDD Pro</a></li>
+                        <li><a href="#" title="EFUNDD Max">EFUNDD Max</a></li>
+                        <li><a href="#" title="Self serve kiosks">Self serve kiosks</a></li>
+                        <li><a href="#" title="POS management">POS management</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/currency.svg" alt="CRM Icon">
+                        </div>
+                        <div class="text">CRM</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="Billing">Billing</a></li>
+                        <li><a href="#" title="Invoicing">Invoicing</a></li>
+                        <li><a href="#" title="Accounting">Accounting</a></li>
+                        <li><a href="#" title="Project management">Project management</a></li>
+                        <li><a href="#" title="Tasks monitoring">Tasks monitoring</a></li>
+                        <li><a href="#" title="Contracts">Contracts</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/card.svg" alt="Card Issuing Icon">
+                        </div>
+                        <div class="text">Card Issuing</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="Physical cards">Physical cards</a></li>
+                        <li><a href="#" title="Virtual cards">Virtual cards</a></li>
+                        <li><a href="#" title="Card management">Card management</a></li>
+                        <li><a href="#" title="Card controls">Card controls</a></li>
+                        <li><a href="#" title="Card production & fulfillment">Card production & fulfillment</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/card.svg" alt="Payment Services Icon">
+                        </div>
+                        <div class="text">Payment Services</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="International transfers & FX">International transfers & FX</a></li>
+                        <li><a href="#" title="Inter ledger transfers">Inter ledger transfers</a></li>
+                        <li><a href="#" title="Multi currency wallets">Multi currency wallets</a></li>
+                        <li><a href="#" title="Debit send">Debit send</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Partners
+                </a>
+                <div class="dropdown-menu mega-menu">
+                  <div class="mega-menu--container">
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/currency.svg" alt="Online Payments Icon">
+                        </div>
+                        <div class="text">Online Payments</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="Checkout">Checkout</a></li>
+                        <li><a href="#" title="Payment link">Payment link</a></li>
+                        <li><a href="#" title="Components">Components</a></li>
+                        <li><a href="#" title="Online payments">Online payments</a></li>
+                        <li><a href="#" title="Open banking">Open banking</a></li>
+                        <li><a href="#" title="Direct Debit">Direct Debit</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/currency.svg" alt="In Person Payments Icon">
+                        </div>
+                        <div class="text">In Person Payments</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="Card readers">Card readers</a></li>
+                        <li><a href="#" title="EFUNDD Pro">EFUNDD Pro</a></li>
+                        <li><a href="#" title="EFUNDD Max">EFUNDD Max</a></li>
+                        <li><a href="#" title="Self serve kiosks">Self serve kiosks</a></li>
+                        <li><a href="#" title="POS management">POS management</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/currency.svg" alt="CRM Icon">
+                        </div>
+                        <div class="text">CRM</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="Billing">Billing</a></li>
+                        <li><a href="#" title="Invoicing">Invoicing</a></li>
+                        <li><a href="#" title="Accounting">Accounting</a></li>
+                        <li><a href="#" title="Project management">Project management</a></li>
+                        <li><a href="#" title="Tasks monitoring">Tasks monitoring</a></li>
+                        <li><a href="#" title="Contracts">Contracts</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/card.svg" alt="Card Issuing Icon">
+                        </div>
+                        <div class="text">Card Issuing</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="Physical cards">Physical cards</a></li>
+                        <li><a href="#" title="Virtual cards">Virtual cards</a></li>
+                        <li><a href="#" title="Card management">Card management</a></li>
+                        <li><a href="#" title="Card controls">Card controls</a></li>
+                        <li><a href="#" title="Card production & fulfillment">Card production & fulfillment</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="mega-menu--col">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./assets//img/other/card.svg" alt="Payment Services Icon">
+                        </div>
+                        <div class="text">Payment Services</div>
+                      </div>
+                      <ul class="list-unstyled">
+                        <li><a href="#" title="International transfers & FX">International transfers & FX</a></li>
+                        <li><a href="#" title="Inter ledger transfers">Inter ledger transfers</a></li>
+                        <li><a href="#" title="Multi currency wallets">Multi currency wallets</a></li>
+                        <li><a href="#" title="Debit send">Debit send</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" title="Pricing" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" title="Help" class="nav-link">Help</a>
+              </li>
+              <li class="nav-item lang-selector--wrapper">
+                <div class="flag-img">
+                  <img src="./assets/img/flag/uk.svg" alt="Flag">
+                </div>
+                <div>
+                  <select id="langSelector" class="lang-selector">
+                    <option selected="selected" value="#">EN</option>
+                    <option value="#/fr/">FR</option>
+                  </select>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" title="Log In" class="btn btn-light-green">Log In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End: Header -->
+
+    <main>
+      <!-- Start: Hero -->
+      <section class="hero hero--in-person-payment">
+        <div class="container">
+          <!-- Active Page Text: Show < 576px -->
+          <div class="d-sm-none text-center">
+            <div class="subtitle">In Person Payments</div>
+          </div>
+          <!-- Active Page Text -->
+
+          <div class="hero--content">
+            <div class="row justify-content-center text-center">
+              <div class="col-xl-10 col-xxl-7">
+                <h1>A card reader for every business</h1>
+
+                <div class="hero--img">
+                  <img src="./assets/img/other/in-person-payment-banner.png" alt="Banner">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Hero -->
+
+      <!-- Start: Card reader qualities -->
+      <section class="card-reader-qualities">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-xl-10 col-xxl-7">
+              <h4>You should be able to take payments for your business on your terms. That’s why we’ve built our card readers around 3 main qualities.</h4>
+            </div>
+          </div>
+
+          <div class="qualities--content">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-xl-6">
+                <div class="image">
+                  <img src="./assets/img/other/in-person-payment.png" alt="In person payment">
+                </div>
+              </div>
+              <div class="col-xl-5 offset-xl-1 mt-5 mt-xl-0">
+                <div class="qualities--content-list">
+                  <div class="item">
+                    <div class="title">Portable</div>
+                    <div class="text">Whether using WiFi connectivity or a device with in-built mobile data, you can use all of our card readers wherever you do business.</div>
+                  </div>
+
+                  <div class="item">
+                    <div class="title">Efficient</div>
+                    <div class="text">With an affordable price and a quick and easy set-up, your card reader is ready to start accepting payments in minutes.</div>
+                  </div>
+
+                  <div class="item">
+                    <div class="title">Multifunctional</div>
+                    <div class="text">Be it through the app or directly on your device's screen, you can do everything from creating catalogues to tracking transactions simply.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Card reader qualities -->
+
+      <!-- Start: Charges -->
+      <section class="charges">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-xxl-6">
+              <h3 class="section-title has-bg-gradient">What will you pay</h3>
+              <p>You won't be tied into any binding contracts or monthly costs. You'll only be charged a fixed transaction fee when you take a payment.</p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-xxl-10">
+              <div class="charges--grid">
+                <div class="charges--col">
+                  <div class="icon">
+                    <img src="./assets/img/other/card-alt.svg" alt="Card">
+                  </div>
+                  <div class="title">1x</div>
+                  <div class="text">One-time device cost</div>
+                </div>
+
+                <div class="charges--col">
+                  <div class="icon">
+                    <img src="./assets/img/other/lock.svg" alt="Lock">
+                  </div>
+                  <div class="title">£0</div>
+                  <div class="text">Monthly costs</div>
+                </div>
+
+                <div class="charges--col">
+                  <div class="icon">
+                    <img src="./assets/img/other/bolt.svg" alt="Bolt">
+                  </div>
+                  <div class="title">1.2%</div>
+                  <div class="text">Transaction fee</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Charges -->
+
+      <!-- Start: Choose card reader -->
+      <section class="choose-card-reader">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="text-center">
+                <h3 class="section-title has-bg-gradient">Choose your reader</h3>
+              </div>
+
+              <div class="choose-card-reader-grid">
+                <div class="choose-card-reader--col">
+                  <div class="card card-choose-card-reader">
+                    <div>
+                      <div class="card-img">
+                        <img class="card-img-top" src="./assets/img/other/card-machine.png" alt="Image">
+                      </div>
+
+                      <div class="card-header">
+                        <div class="card-title">Solo</div>
+                        <div class="price">£59.99</div>
+                        <a href="#" title="Order now" class="btn btn-block btn-light-green">Order now</a>
+                      </div>
+                      <div class="card-body">
+                        <h5>EFUNDD features</h5>
+                        <ul>
+                          <li>Requires the free EBANNC app to accept payments</li>
+                          <li>Connects via Bluetooth to your smartphone or tablet</li>
+                          <li>Up to 12 hours of battery life</li>
+                          <li>Optionally comes with a charging station</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="card-footer">
+                      <a href="#" title="Learn more" class="btn btn-link">Learn more</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="choose-card-reader--col">
+                  <div class="card card-choose-card-reader">
+                    <div>
+                      <div class="card-img">
+                        <img class="card-img-top" src="./assets/img/other/card-machine.png" alt="Image">
+                      </div>
+
+                      <div class="card-header">
+                        <div class="card-title">Solo</div>
+                        <div class="price">£59.99</div>
+                        <a href="#" title="Order now" class="btn btn-block btn-light-green">Order now</a>
+                      </div>
+                      <div class="card-body">
+                        <h5>EFUNDD features</h5>
+                        <ul>
+                          <li>Requires the free EBANNC app to accept payments</li>
+                          <li>Connects via Bluetooth to your smartphone or tablet</li>
+                          <li>Up to 12 hours of battery life</li>
+                          <li>Optionally comes with a charging station</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="card-footer">
+                      <a href="#" title="Learn more" class="btn btn-link">Learn more</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="choose-card-reader--col">
+                  <div class="card card-choose-card-reader">
+                    <div>
+                      <div class="card-img">
+                        <img class="card-img-top" src="./assets/img/other/card-machine.png" alt="Image">
+                      </div>
+
+                      <div class="card-header">
+                        <div class="card-title">Solo</div>
+                        <div class="price">£59.99</div>
+                        <a href="#" title="Order now" class="btn btn-block btn-light-green">Order now</a>
+                      </div>
+                      <div class="card-body">
+                        <h5>EFUNDD features</h5>
+                        <ul>
+                          <li>Requires the free EBANNC app to accept payments</li>
+                          <li>Connects via Bluetooth to your smartphone or tablet</li>
+                          <li>Up to 12 hours of battery life</li>
+                          <li>Optionally comes with a charging station</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="card-footer">
+                      <a href="#" title="Learn more" class="btn btn-link">Learn more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Choose card reader -->
+
+      <!-- Start: Find Product -->
+      <section class="find-product">
+        <div class="container">
+          <div class="text-center">
+            <h3 class="section-title has-bg-gradient">Not sure which product to choose?</h3>
+            <p>Just answer a few short questions and we'll recommend the right tools to help you run your business.</p>
+            <div class="btn-grp justify-content-center mt-5">
+              <a href="#" title="Find your product fit" class="btn btn-light-green">Find your product fit</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Find Product -->
+
+      <!-- Start: Transaction Overview Wrapper -->
+      <section class="transaction-overview--wrapper">
+        <div class="container">
+          <div class="transaction-overview">
+            <div class="row justify-content-center">
+              <div class="col-xxl-11">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-lg-7 col-xl-5">
+                    <h3 class="section-title">Take and send payments, in one place</h3>
+                    <p>Send and accept payments quickly worldwide and get same day access to your funds.</p>
+
+                    <div class="btn-grp">
+                      <a href="#" title="Payments" class="btn btn-light-green">Payments</a>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6">
+                    <div class="transaction-overview--grid">
+                      <div class="transaction-overview--col">
+                        <div class="card-transaction-overview">
+                          <div class="flag">
+                            <img src="./assets/img/flag/uk.svg" alt="UK">
+                          </div>
+                          <div class="amount">£528.30</div>
+                          <div class="currency">GBP</div>
+                        </div>
+                      </div>
+
+                      <div class="transaction-overview--col">
+                        <div class="card-transaction-overview">
+                          <div class="flag">
+                            <img src="./assets/img/flag/europe.svg" alt="Europe">
+                          </div>
+                          <div class="amount">£694.20</div>
+                          <div class="currency">EUR</div>
+                        </div>
+                      </div>
+
+                      <div class="transaction-overview--col">
+                        <div class="card-transaction-overview">
+                          <div class="flag">
+                            <img src="./assets/img/flag/us.svg" alt="US">
+                          </div>
+                          <div class="amount">£761.00</div>
+                          <div class="currency">USD</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Transaction Overview Wrapper -->
+
+      <!-- Start: Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer--grid">
+            <!-- Company Info & Contact Details -->
+            <div class="footer--company">
+              <div class="footer--company-top">
+                <div class="logo">
+                  <img src="./assets//img/logo/logo-white.svg" alt="EFundd Logo">
+                </div>
+
+                <div class="contact-info">
+                  <div class="contact-info--col">
+                    <h5>Support</h5>
+                    <div><a href="mailto:support@funddpay.com" title="support@funddpay.com">support@funddpay.com</a></div>
+                    <div><a href="tel:+4402039761111" title="+44 0203.976.1111">+44 0203.976.1111</a></div>
+                  </div>
+
+                  <div class="contact-info--col">
+                    <h5>Developers</h5>
+                    <div><a href="mailto:integrations@funddpay.com" title="integrations@funddpay.com">integrations@funddpay.com</a></div>
+                  </div>
+
+                  <div class="contact-info--col">
+                    <h5>Sales</h5>
+                    <div><a href="mailto:sales@funddpay.com" title="sales@funddpay.com">sales@funddpay.com</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Hide < 1200px -->
+              <div class="footer--company-bottom">
+                <p>Copyright &copy; 2024 | All Rights Reserved </p>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer--nav">
+              <div class="footer--nav-grid">
+                <div class="footer--nav-col">
+                  <h4>Products</h4>
+                  <ul>
+                    <li><a href="#" title="Integrations">Integrations</a></li>
+                    <li><a href="#" title="In Person Payments">In Person Payments</a></li>
+                    <li><a href="#" title="CRM Platform">CRM Platform</a></li>
+                    <li><a href="#" title="Online Payments">Online Payments</a></li>
+                    <li><a href="#" title="Card Issuing">Card Issuing</a></li>
+                    <li><a href="#" title="Linked Accounts">Linked Accounts</a></li>
+                    <li><a href="#" title="Terminals">Terminals</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer--nav-col">
+                  <h4>Partners</h4>
+                  <ul>
+                    <li><a href="#" title="Developers">Developers</a></li>
+                    <li><a href="#" title="Sales Executives">Sales Executives</a></li>
+                    <li><a href="#" title="Help center">Help center</a></li>
+                    <li><a href="#" title="Agents Login">Agents Login</a></li>
+                    <li><a href="#" title="Solutions">Solutions</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer--nav-col">
+                  <h4>Resources</h4>
+                  <ul>
+                    <li><a href="#" title="Why Funddpay">Why Funddpay</a></li>
+                    <li><a href="#" title="Security">Security</a></li>
+                    <li><a href="#" title="System Status">System Status</a></li>
+                    <li><a href="#" title="Careers">Careers</a></li>
+                    <li><a href="#" title="Sales">Sales</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer--nav-col">
+                  <h4>Legal</h4>
+                  <ul>
+                    <li><a href="#" title="Our Terms & Condition">Our Terms & Condition</a></li>
+                    <li><a href="#" title="Privacy policy">Privacy policy</a></li>
+                    <li><a href="#" title="Cookie policy">Cookie policy</a></li>
+                    <li><a href="#" title="Mastercard">Mastercard</a></li>
+                    <li><a href="#" title="Applcable Fees">Applcable Fees</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Awards Information -->
+            <div class="footer--awards">
+              <h4>Awards & Certificates</h4>
+              <div class="achievements-wrapper">
+                <div class="achievements--list">
+                  <div class="image">
+                    <img src="https://placehold.co/120x120" alt="Certificate Image">
+                  </div>
+                  <div class="image">
+                    <img src="https://placehold.co/120x120" alt="Certificate Image">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hide > 1200px -->
+            <div class="footer--copyright">
+              <p>Copyright &copy; 2024 | All Rights Reserved </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End: Footer -->
+    </main>
+
+    <!-- Bootstrap 5.3 Js (Included Popper) -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
